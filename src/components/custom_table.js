@@ -1,3 +1,5 @@
+import { AddProduct } from "../product/addproduct";
+
 export const CustumTable = ({ data }) => {
     return (
         <div style={{"width":"30%"}}>
@@ -21,6 +23,7 @@ export const CustumTable = ({ data }) => {
                     ))}
                 </tbody>
             </table>
+            <AddProduct/>
         </div>
     );
 };
