@@ -1,11 +1,9 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import Getuserdata from './RESTAPI/Get_userdata';
+import { CounteContex } from './hooks/countContext';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
-    <Getuserdata/>
-  </React.StrictMode>
+  <CounteContex />
 );
 
