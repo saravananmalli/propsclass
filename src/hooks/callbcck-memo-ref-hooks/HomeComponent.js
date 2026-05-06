@@ -3,7 +3,7 @@ import ButtonComponent from './ButtonComponent'
 import Heading from './headingComponent'
 import InfoComponent from './InfoConponent'
 
-export default function Home() {
+const Home =()=> {
 
     const [counter1, setCounter1] = useState(0)
     const [counter2, setCounter2] = useState(100)
@@ -20,9 +20,11 @@ export default function Home() {
         <>
             <Heading />
             <InfoComponent title="Counter1 :" value={counter1} />
-            <ButtonComponent title="Increment 1" eventHandler={increment1} />
+            <ButtonComponent  title="Increment 1" eventHandler={increment1} />
             <InfoComponent title="Counter2 :" value={counter2} />
             <ButtonComponent title="Increment 2" eventHandler={increment2} />
         </>
     )
 }
+
+export default Home
